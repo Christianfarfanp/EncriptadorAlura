@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Imagenes/Logo.png" alt="logo de alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion"> Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="button">
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea id="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small class="pie">Pagina Creada por Christian Farfan &copy; 2023</small>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
